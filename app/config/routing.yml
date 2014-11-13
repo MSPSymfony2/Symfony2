@@ -1,0 +1,5 @@
+msp_core:
+    resource: "@MSPCoreBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
