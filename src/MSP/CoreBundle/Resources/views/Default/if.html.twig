@@ -1,0 +1,22 @@
+{# comenterii #}
+<html>
+    {% if var % 2 == 0 %}
+        Numar par
+    {% else %}
+        Numar impar
+    {% endif %}
+
+    {% if var % 2 == 0 or var % 5 == 0 %}
+        <div>
+            Divizibil cu 5 sau 2
+        </div>
+    {% endif %}
+
+    <br />
+    <br />
+    <br />
+
+    {# cele doua de mai jos sunt echivalente #}
+    {{ var }} ceva
+    {{ var ~ ' ceva' }}
+</html>

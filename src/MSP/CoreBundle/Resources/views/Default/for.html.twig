@@ -1,0 +1,15 @@
+<table>
+    <tbody>
+    {% for user in utilizatori if user != 'Mihai' %}
+        <tr>
+            <td>{{ user }}</td>
+        </tr>
+    {% else %}
+        <tr>
+            <td>
+                Nu exista utilzatori
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
