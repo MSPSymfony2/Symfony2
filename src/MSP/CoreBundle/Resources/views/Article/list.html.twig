@@ -1,0 +1,11 @@
+{% for article in articles %}
+   <h1> {{ article.title }}</h1>
+   <h3> {{ article.description }}</h3>
+   <a href="{{ path('msp_core_article_delete', {'id': article.id}) }}">Delete article</a>
+   <a href="{{ path('msp_core_article_list') }}">List article</a>
+   <br>
+{% endfor %}
+<br>
+{% if articles|length == 0 %}
+    <a href="{{ path('msp_core_article_new') }}">Add a new article</a>
+{% endif %}

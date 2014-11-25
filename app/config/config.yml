@@ -1,6 +1,7 @@
 imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
+    - { resource: bundles/jms_di_extra.yml }
 
 framework:
     #esi:             ~
